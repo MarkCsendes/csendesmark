@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Csendes Márk Portfólió</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-section box">
+            <div class="navbar-wrapper">
+                <button class="dropbtn" onclick="toggleDropdown('m11')">11. osztály</button>
+                <div id="m11" class="dropdown-content">
+                    <a href="pdf/elektro.pdf" target="_blank">Elektronika</a>
+                    <a href="pdf/halozatkez.pdf" target="_blank">Hálózatkezelés</a>
+                    <a href="pdf/digitaram.pdf" target="_blank">Digitális áramkörök</a>
+                    <a href="pdf/adatbaziskez.pdf" target="_blank">Adatbáziskezelés</a>
+                </div>
+            </div>
+            <div class="navbar-wrapper">
+                <button class="dropbtn" onclick="toggleDropdown('m12')">12. osztály</button>
+                <div id="m12" class="dropdown-content">
+                    <a href="pdf/mikrovez.pdf" target="_blank">Mikrovezérlő programozás</a>
+                    <a href="pdf/plc.pdf" target="_blank">PLC programozás</a>
+		    <a href="pdf/szamszim.pdf" target="_blank">Számítógépes szimuláció</a>
+                    <a href="pdf/progalap.pdf" target="_blank">Programozás alapjai</a>
+
+                </div>
+            </div>
+            <div class="navbar-wrapper">
+                <button class="dropbtn" onclick="toggleDropdown('m13')">13. osztály</button>
+                <div id="m13" class="dropdown-content">
+                    <a href="pdf/progfej.pdf" target="_blank">Programfejlesztés</a>
+                    <a href="pdf/robottech.pdf" target="_blank">Robottechnika CAD/CAM</a>
+                    <a href="pdf/iot.pdf" target="_blank">IoT</a>
+                    <a href="pdf/cv.pdf" target="_blank">Munkavállalói angol</a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="logo-section box">
+            <img src="banki-logo.jpg" alt="Bánki Logo" class="banki-logo">
+        </div>
+
+        <div class="intro-section box">
+            <h1>Csendes Márk</h1>
+            <p class="school">Bánki Donát Technikum</p>
+            <p class="desc">Portfólió gyűjtemény: 5 év szakmai fejlődésének és eredményeinek bemutatása.</p>
+        </div>
+
+        <div class="gallery-section box">
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <div class="slider">
+                <img src="asd.png" alt="Projekt 1" class="slide active">
+                <img src="kep2.jpg" alt="Projekt 2" class="slide">
+                <img src="kep3.jpg" alt="Projekt 3" class="slide">
+            </div>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
